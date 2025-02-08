@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { Container, Card, Row, Col } from 'react-bootstrap';
+import './EventsAndNews.css';
 
 const eventsData = [
   { id: 1, date: '2025-01-25', title: 'Annual Sports Day', description: 'Join us for a day of fun and competition.' },
@@ -15,14 +15,14 @@ const newsData = [
 
 function EventsAndNews() {
   return (
-    <div>
-      <h1>Events & News</h1>
+    <Container className="events-news-container">
+      <h1 className="section-title">Events & News</h1>
 
-      <h2>Upcoming Events</h2>
+      <h2 className="sub-title">Upcoming Events</h2>
       <Row>
         {eventsData.map((event) => (
           <Col md={4} key={event.id}>
-            <Card>
+            <Card className="event-card">
               <Card.Body>
                 <Card.Title>{event.title}</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">{event.date}</Card.Subtitle>
@@ -33,11 +33,11 @@ function EventsAndNews() {
         ))}
       </Row>
 
-      <h2>Latest News</h2>
+      <h2 className="sub-title">Latest News</h2>
       <Row>
         {newsData.map((news) => (
           <Col md={4} key={news.id}>
-            <Card>
+            <Card className="news-card">
               <Card.Body>
                 <Card.Title>{news.title}</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">{news.date}</Card.Subtitle>
@@ -47,7 +47,7 @@ function EventsAndNews() {
           </Col>
         ))}
       </Row>
-    </div>
+    </Container>
   );
 }
 

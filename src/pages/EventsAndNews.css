@@ -1,0 +1,25 @@
+.events-news-container {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .section-title {
+    color: #004080;
+    margin-bottom: 1rem;
+  }
+  
+  .sub-title {
+    color: #002050;
+    margin-bottom: 1rem;
+  }
+  
+  .event-card, .news-card {
+    margin: 1rem 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .event-card:hover, .news-card:hover {
+    transform: scale(1.05);
+  }
+  
