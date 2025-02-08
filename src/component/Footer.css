@@ -1,0 +1,21 @@
+.footer {
+    padding: 1rem;
+    background-color: #002050;
+    color: white;
+    text-align: center;
+  }
+  
+  .footer .social-icons {
+    margin-top: 0.5rem;
+  }
+  
+  .footer .social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+  
+  .footer .social-icons a:hover {
+    text-decoration: underline;
+  }
+  

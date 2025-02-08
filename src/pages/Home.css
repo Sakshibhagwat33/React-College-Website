@@ -1,0 +1,40 @@
+.home{
+position: relative;
+z-index: 1;
+text-align: center;
+color: black; /* Increased opacity for better readability */
+padding: 20px;
+border-radius: 10px;
+}
+
+.banner {
+ background-color: rgb(21, 21, 21); /* Add opacity to the text section */
+margin-top: 200px;
+margin-left: 400px;
+padding: 20px;
+border-radius: 10px;
+color: white;
+display: inline-block;
+opacity: 0.8;
+text-align: center;
+}
+
+.quick-links{
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #004080;
+  color: white;
+}
+
+.home-container{
+   background-image: url('/public/main.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+  
+}
+  

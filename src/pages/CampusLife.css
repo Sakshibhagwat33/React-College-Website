@@ -1,0 +1,30 @@
+.campus-life-container {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .campus-life-container h1 {
+    color: #004080;
+    margin-bottom: 1rem;
+  }
+  
+  .campus-life-container h2 {
+    color: #002050;
+    padding-top: 20px;
+
+  }
+  
+  .campus-life-container .card {
+    margin: 1rem 0;
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .campus-life-container .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .campus-life-container .card:hover {
+    transform: scale(1.1);
+  }
