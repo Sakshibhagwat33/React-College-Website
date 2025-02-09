@@ -3,6 +3,7 @@
     background-color: #002050;
     color: white;
     text-align: center;
+    margin: -20px;
   }
   
   .footer .social-icons {
@@ -23,7 +24,7 @@
   }
   
   .row{
-   margin: 20px;
+    padding: 20px;
   }
   .column {
     padding: 40px;
@@ -40,14 +41,13 @@
     border: 2px solid white;
     color: white;
     padding: 10px 15px;
-    margin-left: 100px;
+    margin-left: 140px;
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s ease, color 0.3s ease;
-    
   }
   
   .btn-outline-light:hover {
     background-color: white;
-    color: black;
+     color: black;
   }
