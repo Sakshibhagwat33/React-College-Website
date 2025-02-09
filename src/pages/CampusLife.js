@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Card, Row, Col, Carousel, Container } from "react-bootstrap";
-import "./CampusLife.css";
+import "./Campuslife.css";
 
 const clubsData = [
   {

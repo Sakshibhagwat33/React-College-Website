@@ -1,18 +1,15 @@
-// src/pages/Login.js
 import React, { useState } from "react";
+import Swal from "sweetalert2";
+import "./login.css";
 
 function Login() {
-  // State to toggle between Sign Up and Log In forms
   const [isSignUp, setIsSignUp] = useState(true);
-
-  // Form data state for both Sign Up and Log In
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     password: "",
   });
 
-  // Handle form input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -21,79 +18,95 @@ function Login() {
     }));
   };
 
-  // Handle form submission with alert messages
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    if (isSignUp) {
-      console.log("Sign Up Form submitted:", formData);
-      alert("Sign Up Successful!"); // Alert message for Sign Up
-    } else {
-      console.log("Log In Form submitted:", formData);
-      alert("Log In Successful!"); // Alert message for Log In
-    }
-  };
 
-  // Toggle between Sign Up and Log In
-  const toggleForm = () => {
-    setIsSignUp((prev) => !prev);
-    setFormData({ name: "", email: "", password: "" }); // Reset form data when toggling
+    // Simple validation
+    if (!formData.email || !formData.password || (isSignUp && !formData.name)) {
+      Swal.fire({
+        title: "Error",
+        text: "Please fill out all fields!",
+        icon: "error",
+        confirmButtonText: "OK",
+      });
+      return;
+    }
+
+    if (isSignUp) {
+      Swal.fire({
+        title: "Sign Up Successful!",
+        text: `Welcome, ${formData.name}! Your account has been created.`,
+        icon: "success",
+        confirmButtonText: "OK",
+      });
+    } else {
+      Swal.fire({
+        title: "Login Successful!",
+        text: `Welcome back, ${formData.email}!`,
+        icon: "success",
+        confirmButtonText: "OK",
+      });
+    }
+
+    // Reset form fields
+    setFormData({
+      name: "",
+      email: "",
+      password: "",
+    });
   };
 
   return (
     <div className="auth-container">
-      <h2>{isSignUp ? "Sign Up" : "Log In"}</h2>
-
-      <form onSubmit={handleSubmit}>
+      <h2>{isSignUp ? "Sign Up" : "Login"}</h2>
+      <form onSubmit={handleSubmit} className="auth-form">
         {isSignUp && (
-          <div>
-            <label htmlFor="name">Name :  </label>
+          <div className="form-group">
+            <label htmlFor="name">Name</label>
             <input
               type="text"
               id="name"
               name="name"
               value={formData.name}
               onChange={handleChange}
-              required={isSignUp}  // Only required for Sign Up
+              placeholder="Enter your name"
+              required
             />
           </div>
         )}
-
-        <div>
-          <label htmlFor="email">Email :  </label>
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
           <input
             type="email"
             id="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
+            placeholder="Enter your email"
             required
           />
         </div>
-
-        <div>
-          <label htmlFor="password">Password :  </label>
+        <div className="form-group">
+          <label htmlFor="password">Password</label>
           <input
             type="password"
             id="password"
             name="password"
             value={formData.password}
             onChange={handleChange}
+            placeholder="Enter your password"
             required
           />
         </div>
-
-        <button type="submit">{isSignUp ? "Sign Up" : "Log In"}</button>
+        <button type="submit" className="auth-button">
+          {isSignUp ? "Sign Up" : "Login"}
+        </button>
       </form>
-
-      <button  onClick={toggleForm}>
-        {isSignUp
-          ? "Already have an account? Log In"
-          : "Don't have an account? Sign Up"}
-      </button>
-      
+      <p onClick={() => setIsSignUp(!isSignUp)} className="toggle-text">
+        {isSignUp ? "Already have an account? Login" : "Don't have an account? Sign Up"}
+      </p>
     </div>
   );
 }
 
-export default Login;  
+export default Login;

@@ -1,22 +1,23 @@
 import React from "react";
 import "./Home.css";
+import { useNavigate } from "react-router-dom";
 
-function Home() {
+const ThreeColumnLayout = () => {
+  const navigate = useNavigate();
   return (
-    <div className="home-container">
-      <div class="banner">
-         <h2>Welcome to DPU UNIVARCITY</h2>
+      <div className="home-container">
+        <div className="banner">
+          <h2>Welcome to DPU UNIVARCITY</h2>
           <p>Shaping the Future of Education</p>
-        
-          <button class="quick-links" onClick={() => console.log("Apply Now clicked")}>
+          <button className="quick-links" onClick={() => navigate("/Admissions")}>
             Apply Now
           </button>
-          <button class="quick-links" onClick={() => console.log("Visit Campus clicked")}>
+          <button className="quick-links" onClick={() => navigate("/campus-life")}>
             Visit Campus
           </button>
-          </div>
-    </div>
+        </div>
+      </div> 
   );
-}
+};
 
-export default Home;
+export default ThreeColumnLayout;

@@ -1,43 +1,57 @@
-/* src/styles.css or another CSS file */
 .auth-container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .auth-container form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .auth-container input {
-    margin: 10px 0;
-    padding: 10px;
-  }
-  
-  .auth-container button {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .auth-container button:hover {
-    background-color: #45a049;
-  }
-  
-  .auth-container .toggle-btn {
-    margin-top: 10px;
-    color: #007bff;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .auth-container .toggle-btn:hover {
-    text-decoration: underline;
-  }
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background: white;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.auth-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.auth-button:hover {
+  background-color: #0056b3;
+}
+
+.toggle-text {
+  margin-top: 15px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.toggle-text:hover {
+  text-decoration: underline;
+}
