@@ -47,20 +47,20 @@ const hostelAndFacilitiesData = [
 const testimonialsData = [
   {
     id: 1,
-    name: "John Doe",
-    image: "",
+    name: "Amit Kumar",
+    image: "student1.jpg",
     testimonial: "My college experience has been amazing! The faculty and campus facilities are top-notch.",
   },
   {
     id: 2,
-    name: "Jane Smith",
-    image: "",
+    name: "Priya Singh",
+    image: "student3.jpg",
     testimonial: "I love the extracurricular activities offered here, especially the sports events and music club!",
   },
   {
     id: 3,
-    name: "Mark Johnson",
-    image: "https://via.placeholder.com/100",
+    name: "Rahul Gupta",
+    image: "student2.jpg",
     testimonial: "The hostel facilities are great, and the campus is beautiful. I feel at home here.",
   },
 ];
@@ -111,7 +111,7 @@ function CampusLife() {
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="d-block w-100 rounded-circle"
+                    className="d-block w-50 rounded-circle"
                   />
                 </Col>
                 <Col md={8}>

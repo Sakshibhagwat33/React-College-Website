@@ -65,9 +65,7 @@ const About = () => {
           </p>
           {/* Principal's Image or Video */}
           <div className="principal-media">
-            <img src="image.jpg" alt="Principal" />
-            {/* Alternatively, you can use a video */}
-            {/* <video src="path-to-principal-video.mp4" controls /> */}
+            <img src="principle.jpg" alt="Principal" />
           </div>
         </div>
       </section>

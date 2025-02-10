@@ -97,13 +97,16 @@ function Contactus() {
 
 <h2 className="contact-subtitle">Our Location</h2>
 <iframe
-width="100%"
-height="450"
-frameBorder="0"
-style={{ border: 0 }}
-src="https://www.google.com/maps/embed/v1/plce?q=college&key=YOUR_GOOGLE_MAPS_API_KEY"
-allowFullScreen
+  width="100%"
+  height="450"
+  frameBorder="0"
+  style={{ border: 0 }}
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30237.66749737409!2d73.822243!3d18.624565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b8612b48fd3f%3A0xf080ec8435d265c6!2sDr.%20D.%20Y.%20Patil%20Vidyapeeth%2C%20Pune!5e0!3m2!1sen!2sin!4v1616578921000!5m2!1sen!2sin"
 ></iframe>
+
 
 <h2 className="contact-subtitle">Follow Us</h2>
 <div className="social-links">
