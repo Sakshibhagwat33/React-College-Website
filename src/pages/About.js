@@ -1,9 +1,9 @@
 import React from 'react';
-import './About.css'; // Custom CSS for styling
-import { Carousel } from 'react-responsive-carousel'; // For image carousel (if needed)
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Carousel styles
+import './About.css';
+import { Carousel } from 'react-responsive-carousel'; 
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
-// Sample timeline data
+
 const milestones = [
   { year: '1990', event: 'College Founded' },
   { year: '2000', event: 'First International Partnership' },
@@ -15,7 +15,7 @@ const milestones = [
 const About = () => {
   return (
     <div className="about-page">
-      {/* Mission & Vision Section */}
+     
       <section className="mission-vision">
         <h2>Our Mission & Vision</h2>
         <p>
@@ -23,8 +23,7 @@ const About = () => {
           fostering growth, innovation, and leadership in an ever-changing world. 
           We envision a future where our graduates make a significant impact in their communities and beyond.
         </p>
-        
-        {/* Example Carousel for Mission & Vision */}
+       
         <Carousel>
           <div>
             <img src="future.jpg" alt="Mission Image 1" />
@@ -41,7 +40,7 @@ const About = () => {
         </Carousel>
       </section>
 
-      {/* History Section */}
+   
       <section className="history">
         <h2>Our History</h2>
         <div className="timeline">
@@ -54,7 +53,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Principal's Message */}
       <section className="principal-message">
         <h2>Message from the Principal</h2>
         <div className="message-content">
@@ -63,7 +61,7 @@ const About = () => {
             that nurtures the talents of our students. I am committed to leading this institution towards even greater achievements 
             and ensuring that our students are prepared to thrive in the future.
           </p>
-          {/* Principal's Image or Video */}
+    
           <div className="principal-media">
             <img src="principle.jpg" alt="Principal" />
           </div>

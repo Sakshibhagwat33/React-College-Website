@@ -2,13 +2,13 @@
 position: relative;
 z-index: 1;
 text-align: center;
-color: black; /* Increased opacity for better readability */
+color: black;
 padding: 20px;
 border-radius: 10px;
 }
 
 .banner {
- background-color: rgb(21, 21, 21); /* Add opacity to the text section */
+ background-color: rgb(21, 21, 21);
 margin-top: 200px;
 margin-left: 400px;
 padding: 20px;

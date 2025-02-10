@@ -33,7 +33,7 @@ function AdmissionForm() {
     const { name, files } = e.target;
     setFormData({
       ...formData,
-      [name]: files[0], // Store the first uploaded file
+      [name]: files[0], 
     });
   };
 
@@ -46,8 +46,6 @@ function AdmissionForm() {
       icon: "success",
       confirmButtonText: "OK",
     });
-
-    // Reset form after submission
     setFormData({
       name: '',
       email: '',
@@ -57,8 +55,6 @@ function AdmissionForm() {
       tenthMarksheet: null,
       twelfthMarksheet: null,
     });
-
-    // Reset file inputs
     document.getElementById("lastYearMarksheet").value = "";
     document.getElementById("tenthMarksheet").value = "";
     document.getElementById("twelfthMarksheet").value = "";

@@ -7,8 +7,6 @@ function Admissions() {
     <div className="admissions-container">
       <h1>Admission to Our University</h1>
       <AdmissionForm />
-
-      {/* Course Details Section */}
       <section>
         <h2>Available Courses</h2>
         <p>We offer a variety of undergraduate and postgraduate programs across multiple disciplines.</p>
@@ -49,8 +47,6 @@ function Admissions() {
           </tbody>
         </table>
       </section>
-
-      {/* Admission Process */}
       <section>
         <h2>Admission Process</h2>
         <ol>
@@ -64,8 +60,6 @@ function Admissions() {
           <li>Complete the fee payment and enrollment process.</li>
         </ol>
       </section>
-
-      {/* Fee Structure */}
       <section>
         <h2>Fee Structure</h2>
         <table>
@@ -100,8 +94,6 @@ function Admissions() {
           </tbody>
         </table>
       </section>
-
-      {/* Scholarships & Financial Aid */}
       <section>
         <h2>Scholarships & Financial Aid</h2>
         <p>We offer a variety of scholarships and financial aid options for eligible students.</p>

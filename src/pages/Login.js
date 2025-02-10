@@ -20,8 +20,6 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Simple validation
     if (!formData.email || !formData.password || (isSignUp && !formData.name)) {
       Swal.fire({
         title: "Error",
@@ -47,8 +45,6 @@ function Login() {
         confirmButtonText: "OK",
       });
     }
-
-    // Reset form fields
     setFormData({
       name: "",
       email: "",

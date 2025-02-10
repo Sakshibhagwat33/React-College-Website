@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 import './ContactUs.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Contactus() {
   const [formData, setFormData] = useState({
@@ -107,13 +108,19 @@ function Contactus() {
   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30237.66749737409!2d73.822243!3d18.624565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b8612b48fd3f%3A0xf080ec8435d265c6!2sDr.%20D.%20Y.%20Patil%20Vidyapeeth%2C%20Pune!5e0!3m2!1sen!2sin!4v1616578921000!5m2!1sen!2sin"
 ></iframe>
 
-
 <h2 className="contact-subtitle">Follow Us</h2>
 <div className="social-links">
-<a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-<a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-<a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+    <i className="fab fa-facebook-f"></i> Facebook
+  </a>
+  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+    <i className="fab fa-instagram"></i> Instagram
+  </a>
+  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+    <i className="fab fa-linkedin-in bg bg-blue"></i> LinkedIn
+  </a>
 </div>
+
 </Container>
 );
 }

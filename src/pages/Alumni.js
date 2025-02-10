@@ -1,4 +1,4 @@
-// src/pages/Alumni.js
+
 import React, { useState } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 
@@ -24,7 +24,6 @@ function Alumni() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Form submission logic goes here
     alert('Alumni details submitted');
   };
 

@@ -1,4 +1,4 @@
-/* General styles for the About page */
+
 .about-page {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -18,8 +18,7 @@
     color: #2c3e50;
     margin: 0.5rem 0;
   }
-  
-  /* Mission & Vision Section */
+
   .mission-vision {
     background-color: #f7f7f7;
     padding: 2rem 1rem;
@@ -42,8 +41,6 @@
     padding: 10px;
   }
   
-  
-  /* History Section */
   .history {
     padding: 2rem;
     background-color: #ffffff;
@@ -74,8 +71,7 @@
     font-size: 1rem;
     color: #7f8c8d;
   }
-  
-  /* Principal's Message */
+
   .principal-message {
     display: flex;
     flex-direction: column;
@@ -103,7 +99,6 @@
     margin-top: 1rem;
   }
   
-  /* Accreditations & Affiliations Section */
   .accreditations{
     padding: 2rem;
     background-color: #ffffff;
@@ -131,7 +126,6 @@
     transform: scale(1.1);
   }
   
-  /* Responsive Design */
   @media (max-width: 768px) {
     .about-page {
       padding: 1rem;
