@@ -1,47 +1,12 @@
-
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: black; */
-  
-  
-  /* .header .logo {
-    display: flex;
-    align-items: center;
-    height: 70px;
-  }
-  
-  .header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .header nav ul li a {
-    text-decoration: none;
-    color:white;
-  } */
-
   .header {
     background: linear-gradient(to right, #0d1b2a, #1b263b);
     color: white;
   }
   .logo-box {
-    background-color: #ff7f00;
     color: white;
-    font-size: 24px;
     font-weight: bold;
-    padding: 10px;
-    margin-right: 10px;
-  }
-  .logo-text h2 {
-    font-size: 22px;
-    margin: 0;
   }
   .logo-text p {
-    font-size: 14px;
-    margin: 0;
     color: #ddd;
   }
   .contact .phone {
@@ -57,7 +22,6 @@
     background: transparent;
     border: 1px solid white;
     color: white;
-    padding: 5px 10px;
     margin: 5px;
     cursor: pointer;
   }
@@ -116,4 +80,9 @@
   text-decoration: none;
   font-weight: bold;
   padding-left: 20px;
+}
+
+.logo-box img{
+  width: 100px;
+  margin-left: 40px;
 }
