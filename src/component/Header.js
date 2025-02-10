@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Header() {
   console.log("Header component rendered.");
